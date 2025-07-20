@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block content %}
+<div class="container-fluid p-0">
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-content text-center">
+      <h1 class="display-4 mb-4">Discover Your Next Favorite Movie</h1>
+      <p class="lead">Personalized recommendations just for you</p>
+    </div>
+  </div>
+
+  <!-- Trending Movies Section -->
+  <div class="container py-5">
+    <h2 class="mb-4 text-center">Trending Now</h2>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-4">
+      {% for movie in trending_movies %}
+      <div class="col">
+        <div class="movie-card h-100">
+          <img
+            src="{{ movie.poster }}"
+            class="card-img-top"
+            alt="{{ movie.title }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ movie.title }}</h5>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="badge bg-primary">{{ movie.rating }}/5</span>
+              <span class="text-muted small">{{ movie.year }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="container text-center mt-5">
+    <a href="{{ url_for('recommend') }}" class="btn btn-custom btn-lg">
+      Get Personalized Recommendations <i class="bi bi-arrow-right"></i>
+    </a>
+  </div>
+</div>
+{% endblock %}

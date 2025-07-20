@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --hover-color: #2980b9;
+    --background-color: #f8f9fa;
+    --text-color: #2c3e50;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('https://source.unsplash.com/random/1920x1080/?movie') center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.movie-card {
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+.btn-custom {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--hover-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.search-container {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.search-box {
+    border-radius: 30px;
+    padding: 20px 25px;
+    font-size: 1.1rem;
+}
+
+.recommendation-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.alert-custom {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.recommendation-button {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.movie-card .card-title {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card.shadow-lg {
+    border-radius: 1rem;
+    border: none;
+}
+
+.form-control-lg {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.btn-custom {
+    background-color: #2c3e50;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+}
