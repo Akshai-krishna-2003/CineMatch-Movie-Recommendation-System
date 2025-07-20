@@ -7,8 +7,9 @@
 
 ## 📽️ Project Demo
 
-📺 [Watch the Demo Video](#)  
-https://github.com/user-attachments/assets/2ee48cf6-569c-43a9-9c42-0461506d0513
+<video src="https://github.com/user-attachments/assets/2ee48cf6-569c-43a9-9c42-0461506d0513" controls width="100%" style="border-radius: 10px;">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
