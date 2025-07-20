@@ -175,13 +175,6 @@ It’s because the pre-trained models were saved with **scikit-learn 1.2.2**, bu
 - 🌍 Add region/language-specific recommendation logic
 - 📱 Deploy as a full-stack web or mobile app
 
----
-
-## 🙌 Acknowledgements
-
-- Thanks to my **supervisor** [Supervisor's Name] for continuous support  
-- Appreciation to **friends, faculty, and peers** for suggestions  
-- Credits to **GroupLens Research** for providing the dataset
 
 ---
 
